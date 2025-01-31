@@ -1,0 +1,1962 @@
+2024-11-27 19:45:48.714 | INFO     | solver_n_msg_deepsteg:__init__:18 - running multiple decoders solver!
+2024-11-27 19:45:49.340 | DEBUG    | solver_n_msg_deepsteg:__init__:47 - DataParallel(
+  (module): Encoder(
+    (main): Sequential(
+      (0): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (1): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (2): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+    )
+  )
+)
+2024-11-27 19:45:49.340 | DEBUG    | solver_n_msg_deepsteg:__init__:48 - DataParallel(
+  (module): CarrierDecoder(
+    (main): Sequential(
+      (0): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(66, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (1): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (2): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (3): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 1, kernel_size=(1, 1), stride=(1, 1))
+          (1): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+    )
+  )
+)
+2024-11-27 19:45:49.340 | DEBUG    | solver_n_msg_deepsteg:__init__:49 - [DataParallel(
+  (module): MsgDecoder(
+    (main): Sequential(
+      (0): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (1): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (2): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (3): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (4): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+      (5): ReluBlock(
+        (conv): Sequential(
+          (0): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (1): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU()
+        )
+      )
+    )
+  )
+)]
+2024-11-27 19:45:49.340 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:45:49.341 | INFO     | solver:train:191 - start training...
+2024-11-27 19:45:49.341 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 19:49:54.680 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:49:54.681 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 1_epoch
+2024-11-27 19:49:54.693 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:49:54.694 | INFO     | solver:test:287 - phase: validation
+2024-11-27 19:49:54.694 | INFO     | solver:test:290 - start testing...
+2024-11-27 19:50:08.445 | INFO     | solver:test:308 - finished testing!
+2024-11-27 19:50:08.445 | INFO     | solver:test:309 - carrier loss: 0.05228088411783415
+2024-11-27 19:50:08.446 | INFO     | solver:test:310 - carrier SnR: 13.44108772277832
+2024-11-27 19:50:08.446 | INFO     | solver:test:311 - message loss: 0.3709772073087238
+2024-11-27 19:50:08.446 | INFO     | solver:test:312 - message SnR: 4.955681324005127
+2024-11-27 19:50:08.448 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 19:54:12.151 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:54:12.152 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 2_epoch
+2024-11-27 19:54:12.158 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:54:12.158 | INFO     | solver:test:287 - phase: validation
+2024-11-27 19:54:12.158 | INFO     | solver:test:290 - start testing...
+2024-11-27 19:54:25.907 | INFO     | solver:test:308 - finished testing!
+2024-11-27 19:54:25.907 | INFO     | solver:test:309 - carrier loss: 0.022538565276634125
+2024-11-27 19:54:25.908 | INFO     | solver:test:310 - carrier SnR: 17.088783264160156
+2024-11-27 19:54:25.908 | INFO     | solver:test:311 - message loss: 0.3311515781614516
+2024-11-27 19:54:25.908 | INFO     | solver:test:312 - message SnR: 5.438652038574219
+2024-11-27 19:54:25.909 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 19:58:29.597 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:58:29.598 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 3_epoch
+2024-11-27 19:58:29.604 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 19:58:29.604 | INFO     | solver:test:287 - phase: validation
+2024-11-27 19:58:29.604 | INFO     | solver:test:290 - start testing...
+2024-11-27 19:58:43.347 | INFO     | solver:test:308 - finished testing!
+2024-11-27 19:58:43.348 | INFO     | solver:test:309 - carrier loss: 0.020667587569545186
+2024-11-27 19:58:43.348 | INFO     | solver:test:310 - carrier SnR: 17.463415145874023
+2024-11-27 19:58:43.349 | INFO     | solver:test:311 - message loss: 0.29961030634622726
+2024-11-27 19:58:43.349 | INFO     | solver:test:312 - message SnR: 5.8770432472229
+2024-11-27 19:58:43.351 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:02:48.427 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:02:48.428 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 4_epoch
+2024-11-27 20:02:48.437 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:02:48.438 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:02:48.438 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:03:02.742 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:03:02.743 | INFO     | solver:test:309 - carrier loss: 0.018077284215934693
+2024-11-27 20:03:02.744 | INFO     | solver:test:310 - carrier SnR: 18.043201446533203
+2024-11-27 20:03:02.744 | INFO     | solver:test:311 - message loss: 0.30447385448312003
+2024-11-27 20:03:02.744 | INFO     | solver:test:312 - message SnR: 5.800207138061523
+2024-11-27 20:03:02.747 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:07:07.667 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:07:07.669 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 5_epoch
+2024-11-27 20:07:07.684 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:07:07.685 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:07:07.685 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:07:21.899 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:07:21.899 | INFO     | solver:test:309 - carrier loss: 0.019188287608798534
+2024-11-27 20:07:21.900 | INFO     | solver:test:310 - carrier SnR: 17.785648345947266
+2024-11-27 20:07:21.900 | INFO     | solver:test:311 - message loss: 0.26374089031938525
+2024-11-27 20:07:21.900 | INFO     | solver:test:312 - message SnR: 6.429959774017334
+2024-11-27 20:07:21.904 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:11:27.607 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:11:27.607 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 6_epoch
+2024-11-27 20:11:27.620 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:11:27.621 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:11:27.621 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:11:41.624 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:11:41.624 | INFO     | solver:test:309 - carrier loss: 0.016601700675747698
+2024-11-27 20:11:41.625 | INFO     | solver:test:310 - carrier SnR: 18.41368293762207
+2024-11-27 20:11:41.626 | INFO     | solver:test:311 - message loss: 0.25333571765157914
+2024-11-27 20:11:41.626 | INFO     | solver:test:312 - message SnR: 6.6158623695373535
+2024-11-27 20:11:41.631 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:15:47.150 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:15:47.150 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 7_epoch
+2024-11-27 20:15:47.157 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:15:47.157 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:15:47.157 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:16:01.392 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:16:01.393 | INFO     | solver:test:309 - carrier loss: 0.01554121303239039
+2024-11-27 20:16:01.394 | INFO     | solver:test:310 - carrier SnR: 18.699968338012695
+2024-11-27 20:16:01.394 | INFO     | solver:test:311 - message loss: 0.29358310831917656
+2024-11-27 20:16:01.395 | INFO     | solver:test:312 - message SnR: 5.960353851318359
+2024-11-27 20:16:01.399 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:20:07.173 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:20:07.174 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 8_epoch
+2024-11-27 20:20:07.182 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:20:07.182 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:20:07.182 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:20:21.262 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:20:21.262 | INFO     | solver:test:309 - carrier loss: 0.020603296480008533
+2024-11-27 20:20:21.262 | INFO     | solver:test:310 - carrier SnR: 17.476917266845703
+2024-11-27 20:20:21.262 | INFO     | solver:test:311 - message loss: 0.23992840756499578
+2024-11-27 20:20:21.263 | INFO     | solver:test:312 - message SnR: 6.8432207107543945
+2024-11-27 20:20:21.264 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:24:26.856 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:24:26.858 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 9_epoch
+2024-11-27 20:24:26.870 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:24:26.871 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:24:26.871 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:24:41.046 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:24:41.047 | INFO     | solver:test:309 - carrier loss: 0.014903546902277166
+2024-11-27 20:24:41.047 | INFO     | solver:test:310 - carrier SnR: 18.883136749267578
+2024-11-27 20:24:41.047 | INFO     | solver:test:311 - message loss: 0.2501327561007606
+2024-11-27 20:24:41.047 | INFO     | solver:test:312 - message SnR: 6.662231922149658
+2024-11-27 20:24:41.050 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:28:48.165 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:28:48.166 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 10_epoch
+2024-11-27 20:28:48.176 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:28:48.176 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:28:48.177 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:29:02.357 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:29:02.357 | INFO     | solver:test:309 - carrier loss: 0.026024427797113146
+2024-11-27 20:29:02.358 | INFO     | solver:test:310 - carrier SnR: 16.46172523498535
+2024-11-27 20:29:02.358 | INFO     | solver:test:311 - message loss: 0.252313931546514
+2024-11-27 20:29:02.358 | INFO     | solver:test:312 - message SnR: 6.6296000480651855
+2024-11-27 20:29:02.360 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:33:08.838 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:33:08.840 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 11_epoch
+2024-11-27 20:33:08.848 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:33:08.849 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:33:08.850 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:33:23.192 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:33:23.193 | INFO     | solver:test:309 - carrier loss: 0.01755140010740549
+2024-11-27 20:33:23.194 | INFO     | solver:test:310 - carrier SnR: 18.172460556030273
+2024-11-27 20:33:23.194 | INFO     | solver:test:311 - message loss: 0.2155662654411225
+2024-11-27 20:33:23.194 | INFO     | solver:test:312 - message SnR: 7.311122417449951
+2024-11-27 20:33:23.197 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:37:29.458 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:37:29.459 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 12_epoch
+2024-11-27 20:37:29.464 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:37:29.465 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:37:29.465 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:37:43.728 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:37:43.728 | INFO     | solver:test:309 - carrier loss: 0.01961768925603893
+2024-11-27 20:37:43.729 | INFO     | solver:test:310 - carrier SnR: 17.691875457763672
+2024-11-27 20:37:43.729 | INFO     | solver:test:311 - message loss: 0.21706000396183558
+2024-11-27 20:37:43.729 | INFO     | solver:test:312 - message SnR: 7.288539886474609
+2024-11-27 20:37:43.731 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:41:50.184 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:41:50.185 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 13_epoch
+2024-11-27 20:41:50.191 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:41:50.191 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:41:50.191 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:42:04.429 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:42:04.429 | INFO     | solver:test:309 - carrier loss: 0.022770746951065367
+2024-11-27 20:42:04.430 | INFO     | solver:test:310 - carrier SnR: 17.046714782714844
+2024-11-27 20:42:04.430 | INFO     | solver:test:311 - message loss: 0.2181872803540457
+2024-11-27 20:42:04.430 | INFO     | solver:test:312 - message SnR: 7.262373447418213
+2024-11-27 20:42:04.431 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:46:08.448 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:46:08.448 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 14_epoch
+2024-11-27 20:46:08.455 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:46:08.455 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:46:08.455 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:46:22.255 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:46:22.256 | INFO     | solver:test:309 - carrier loss: 0.01664949467198716
+2024-11-27 20:46:22.257 | INFO     | solver:test:310 - carrier SnR: 18.402984619140625
+2024-11-27 20:46:22.257 | INFO     | solver:test:311 - message loss: 0.22805891339741055
+2024-11-27 20:46:22.257 | INFO     | solver:test:312 - message SnR: 7.078010082244873
+2024-11-27 20:46:22.260 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:50:26.241 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:50:26.242 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 15_epoch
+2024-11-27 20:50:26.247 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:50:26.248 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:50:26.248 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:50:40.057 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:50:40.057 | INFO     | solver:test:309 - carrier loss: 0.01527634570522914
+2024-11-27 20:50:40.057 | INFO     | solver:test:310 - carrier SnR: 18.774646759033203
+2024-11-27 20:50:40.057 | INFO     | solver:test:311 - message loss: 0.23371429670424687
+2024-11-27 20:50:40.058 | INFO     | solver:test:312 - message SnR: 6.96394681930542
+2024-11-27 20:50:40.059 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:54:43.973 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:54:43.974 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 16_epoch
+2024-11-27 20:54:43.979 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:54:43.979 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:54:43.980 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:54:57.797 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:54:57.798 | INFO     | solver:test:309 - carrier loss: 0.014465892436130652
+2024-11-27 20:54:57.798 | INFO     | solver:test:310 - carrier SnR: 19.01072120666504
+2024-11-27 20:54:57.798 | INFO     | solver:test:311 - message loss: 0.22002631260289085
+2024-11-27 20:54:57.798 | INFO     | solver:test:312 - message SnR: 7.223782062530518
+2024-11-27 20:54:57.800 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 20:59:01.732 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:59:01.732 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 17_epoch
+2024-11-27 20:59:01.738 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 20:59:01.738 | INFO     | solver:test:287 - phase: validation
+2024-11-27 20:59:01.739 | INFO     | solver:test:290 - start testing...
+2024-11-27 20:59:15.516 | INFO     | solver:test:308 - finished testing!
+2024-11-27 20:59:15.516 | INFO     | solver:test:309 - carrier loss: 0.029380498010487782
+2024-11-27 20:59:15.517 | INFO     | solver:test:310 - carrier SnR: 15.94221019744873
+2024-11-27 20:59:15.517 | INFO     | solver:test:311 - message loss: 0.42666333062308176
+2024-11-27 20:59:15.518 | INFO     | solver:test:312 - message SnR: 4.328281402587891
+2024-11-27 20:59:15.521 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:03:19.535 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:03:19.536 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 18_epoch
+2024-11-27 21:03:19.543 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:03:19.544 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:03:19.544 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:03:33.310 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:03:33.310 | INFO     | solver:test:309 - carrier loss: 0.024159031757523142
+2024-11-27 21:03:33.310 | INFO     | solver:test:310 - carrier SnR: 16.7913875579834
+2024-11-27 21:03:33.310 | INFO     | solver:test:311 - message loss: 0.20535906439735777
+2024-11-27 21:03:33.311 | INFO     | solver:test:312 - message SnR: 7.534877777099609
+2024-11-27 21:03:33.314 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:07:37.134 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:07:37.135 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 19_epoch
+2024-11-27 21:07:37.140 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:07:37.141 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:07:37.141 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:07:50.930 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:07:50.931 | INFO     | solver:test:309 - carrier loss: 0.01294980054750802
+2024-11-27 21:07:50.931 | INFO     | solver:test:310 - carrier SnR: 19.490346908569336
+2024-11-27 21:07:50.931 | INFO     | solver:test:311 - message loss: 0.21235387618579563
+2024-11-27 21:07:50.931 | INFO     | solver:test:312 - message SnR: 7.3831095695495605
+2024-11-27 21:07:50.933 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:11:55.075 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:11:55.077 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 20_epoch
+2024-11-27 21:11:55.097 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:11:55.098 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:11:55.099 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:12:10.141 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:12:10.141 | INFO     | solver:test:309 - carrier loss: 0.015224292829987548
+2024-11-27 21:12:10.143 | INFO     | solver:test:310 - carrier SnR: 18.78970718383789
+2024-11-27 21:12:10.143 | INFO     | solver:test:311 - message loss: 0.23679285839436545
+2024-11-27 21:12:10.143 | INFO     | solver:test:312 - message SnR: 6.907249927520752
+2024-11-27 21:12:10.149 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:16:15.098 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:16:15.099 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 21_epoch
+2024-11-27 21:16:15.104 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:16:15.104 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:16:15.104 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:16:29.169 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:16:29.169 | INFO     | solver:test:309 - carrier loss: 0.01459245148691393
+2024-11-27 21:16:29.170 | INFO     | solver:test:310 - carrier SnR: 18.974430084228516
+2024-11-27 21:16:29.170 | INFO     | solver:test:311 - message loss: 0.18839312427573734
+2024-11-27 21:16:29.170 | INFO     | solver:test:312 - message SnR: 7.910154819488525
+2024-11-27 21:16:29.172 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:20:34.437 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:20:34.438 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 22_epoch
+2024-11-27 21:20:34.445 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:20:34.446 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:20:34.446 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:20:48.921 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:20:48.921 | INFO     | solver:test:309 - carrier loss: 0.01629707042778295
+2024-11-27 21:20:48.922 | INFO     | solver:test:310 - carrier SnR: 18.494579315185547
+2024-11-27 21:20:48.922 | INFO     | solver:test:311 - message loss: 0.18737265349380552
+2024-11-27 21:20:48.922 | INFO     | solver:test:312 - message SnR: 7.9368815422058105
+2024-11-27 21:20:48.925 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:24:53.592 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:24:53.600 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 23_epoch
+2024-11-27 21:24:53.607 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:24:53.607 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:24:53.607 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:25:07.373 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:25:07.374 | INFO     | solver:test:309 - carrier loss: 0.01318525741734202
+2024-11-27 21:25:07.374 | INFO     | solver:test:310 - carrier SnR: 19.414690017700195
+2024-11-27 21:25:07.374 | INFO     | solver:test:311 - message loss: 0.2104595253864924
+2024-11-27 21:25:07.374 | INFO     | solver:test:312 - message SnR: 7.4169487953186035
+2024-11-27 21:25:07.376 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:29:11.222 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:29:11.223 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 24_epoch
+2024-11-27 21:29:11.229 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:29:11.230 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:29:11.230 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:29:24.961 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:29:24.961 | INFO     | solver:test:309 - carrier loss: 0.012393749984247344
+2024-11-27 21:29:24.962 | INFO     | solver:test:310 - carrier SnR: 19.681629180908203
+2024-11-27 21:29:24.962 | INFO     | solver:test:311 - message loss: 0.19449936066355025
+2024-11-27 21:29:24.962 | INFO     | solver:test:312 - message SnR: 7.764859676361084
+2024-11-27 21:29:24.965 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:33:28.826 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:33:28.827 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 25_epoch
+2024-11-27 21:33:28.834 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:33:28.834 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:33:28.834 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:33:42.577 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:33:42.577 | INFO     | solver:test:309 - carrier loss: 0.01161292674286025
+2024-11-27 21:33:42.577 | INFO     | solver:test:310 - carrier SnR: 19.96400260925293
+2024-11-27 21:33:42.577 | INFO     | solver:test:311 - message loss: 0.1899964717172441
+2024-11-27 21:33:42.578 | INFO     | solver:test:312 - message SnR: 7.875138759613037
+2024-11-27 21:33:42.580 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:37:46.437 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:37:46.438 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 26_epoch
+2024-11-27 21:37:46.444 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:37:46.445 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:37:46.445 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:38:00.160 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:38:00.160 | INFO     | solver:test:309 - carrier loss: 0.013557562087145116
+2024-11-27 21:38:00.161 | INFO     | solver:test:310 - carrier SnR: 19.293668746948242
+2024-11-27 21:38:00.161 | INFO     | solver:test:311 - message loss: 0.20045790478350625
+2024-11-27 21:38:00.162 | INFO     | solver:test:312 - message SnR: 7.640392780303955
+2024-11-27 21:38:00.163 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:42:03.949 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:42:03.950 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 27_epoch
+2024-11-27 21:42:03.959 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:42:03.960 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:42:03.960 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:42:17.655 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:42:17.656 | INFO     | solver:test:309 - carrier loss: 0.01142355820371045
+2024-11-27 21:42:17.657 | INFO     | solver:test:310 - carrier SnR: 20.036108016967773
+2024-11-27 21:42:17.657 | INFO     | solver:test:311 - message loss: 0.18891716050723242
+2024-11-27 21:42:17.657 | INFO     | solver:test:312 - message SnR: 7.90462064743042
+2024-11-27 21:42:17.662 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:46:21.472 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:46:21.473 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 28_epoch
+2024-11-27 21:46:21.480 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:46:21.481 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:46:21.481 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:46:35.226 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:46:35.227 | INFO     | solver:test:309 - carrier loss: 0.015715798939622584
+2024-11-27 21:46:35.227 | INFO     | solver:test:310 - carrier SnR: 18.653175354003906
+2024-11-27 21:46:35.227 | INFO     | solver:test:311 - message loss: 0.18478106742813474
+2024-11-27 21:46:35.227 | INFO     | solver:test:312 - message SnR: 7.996129512786865
+2024-11-27 21:46:35.229 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:50:38.930 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:50:38.931 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 29_epoch
+2024-11-27 21:50:38.938 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:50:38.938 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:50:38.938 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:50:52.685 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:50:52.685 | INFO     | solver:test:309 - carrier loss: 0.013548294392724832
+2024-11-27 21:50:52.685 | INFO     | solver:test:310 - carrier SnR: 19.29599380493164
+2024-11-27 21:50:52.685 | INFO     | solver:test:311 - message loss: 0.17859237416396065
+2024-11-27 21:50:52.685 | INFO     | solver:test:312 - message SnR: 8.147692680358887
+2024-11-27 21:50:52.687 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:54:56.457 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:54:56.458 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 30_epoch
+2024-11-27 21:54:56.463 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:54:56.464 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:54:56.464 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:55:10.206 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:55:10.206 | INFO     | solver:test:309 - carrier loss: 0.012387064699497487
+2024-11-27 21:55:10.207 | INFO     | solver:test:310 - carrier SnR: 19.684053421020508
+2024-11-27 21:55:10.207 | INFO     | solver:test:311 - message loss: 0.1836097157663769
+2024-11-27 21:55:10.207 | INFO     | solver:test:312 - message SnR: 8.017998695373535
+2024-11-27 21:55:10.209 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 21:59:13.965 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:59:13.965 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 31_epoch
+2024-11-27 21:59:13.972 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 21:59:13.973 | INFO     | solver:test:287 - phase: validation
+2024-11-27 21:59:13.973 | INFO     | solver:test:290 - start testing...
+2024-11-27 21:59:27.721 | INFO     | solver:test:308 - finished testing!
+2024-11-27 21:59:27.722 | INFO     | solver:test:309 - carrier loss: 0.015320839064698371
+2024-11-27 21:59:27.722 | INFO     | solver:test:310 - carrier SnR: 18.763418197631836
+2024-11-27 21:59:27.722 | INFO     | solver:test:311 - message loss: 0.1859811974896325
+2024-11-27 21:59:27.722 | INFO     | solver:test:312 - message SnR: 7.964245796203613
+2024-11-27 21:59:27.724 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:03:32.552 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:03:32.553 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 32_epoch
+2024-11-27 22:03:32.560 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:03:32.561 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:03:32.561 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:03:46.757 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:03:46.757 | INFO     | solver:test:309 - carrier loss: 0.011762266638614828
+2024-11-27 22:03:46.758 | INFO     | solver:test:310 - carrier SnR: 19.9085636138916
+2024-11-27 22:03:46.758 | INFO     | solver:test:311 - message loss: 0.18815456117902482
+2024-11-27 22:03:46.758 | INFO     | solver:test:312 - message SnR: 7.915456295013428
+2024-11-27 22:03:46.760 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:07:53.263 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:07:53.264 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 33_epoch
+2024-11-27 22:07:53.280 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:07:53.282 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:07:53.282 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:08:08.096 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:08:08.096 | INFO     | solver:test:309 - carrier loss: 0.010920818614226484
+2024-11-27 22:08:08.098 | INFO     | solver:test:310 - carrier SnR: 20.230091094970703
+2024-11-27 22:08:08.098 | INFO     | solver:test:311 - message loss: 0.17980966870746914
+2024-11-27 22:08:08.098 | INFO     | solver:test:312 - message SnR: 8.11497974395752
+2024-11-27 22:08:08.100 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:12:14.127 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:12:14.128 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 34_epoch
+2024-11-27 22:12:14.147 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:12:14.149 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:12:14.149 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:12:28.435 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:12:28.436 | INFO     | solver:test:309 - carrier loss: 0.012583603786807212
+2024-11-27 22:12:28.437 | INFO     | solver:test:310 - carrier SnR: 19.61800765991211
+2024-11-27 22:12:28.437 | INFO     | solver:test:311 - message loss: 0.19195706172594948
+2024-11-27 22:12:28.438 | INFO     | solver:test:312 - message SnR: 7.828698635101318
+2024-11-27 22:12:28.440 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:16:33.351 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:16:33.351 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 35_epoch
+2024-11-27 22:16:33.358 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:16:33.358 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:16:33.358 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:16:47.140 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:16:47.140 | INFO     | solver:test:309 - carrier loss: 0.017844508135957376
+2024-11-27 22:16:47.140 | INFO     | solver:test:310 - carrier SnR: 18.10365104675293
+2024-11-27 22:16:47.140 | INFO     | solver:test:311 - message loss: 0.1878495765110803
+2024-11-27 22:16:47.141 | INFO     | solver:test:312 - message SnR: 7.929875373840332
+2024-11-27 22:16:47.142 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:20:51.605 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:20:51.606 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 36_epoch
+2024-11-27 22:20:51.612 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:20:51.612 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:20:51.612 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:21:05.654 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:21:05.654 | INFO     | solver:test:309 - carrier loss: 0.013689766504934855
+2024-11-27 22:21:05.654 | INFO     | solver:test:310 - carrier SnR: 19.250246047973633
+2024-11-27 22:21:05.654 | INFO     | solver:test:311 - message loss: 0.19019508432774318
+2024-11-27 22:21:05.655 | INFO     | solver:test:312 - message SnR: 7.865176677703857
+2024-11-27 22:21:05.657 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:25:11.266 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:25:11.266 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 37_epoch
+2024-11-27 22:25:11.279 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:25:11.280 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:25:11.281 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:25:25.416 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:25:25.416 | INFO     | solver:test:309 - carrier loss: 0.0136782539387544
+2024-11-27 22:25:25.417 | INFO     | solver:test:310 - carrier SnR: 19.256324768066406
+2024-11-27 22:25:25.417 | INFO     | solver:test:311 - message loss: 0.1910683529244529
+2024-11-27 22:25:25.419 | INFO     | solver:test:312 - message SnR: 7.83736515045166
+2024-11-27 22:25:25.425 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:29:31.045 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:29:31.046 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 38_epoch
+2024-11-27 22:29:31.053 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:29:31.054 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:29:31.054 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:29:45.155 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:29:45.155 | INFO     | solver:test:309 - carrier loss: 0.019314592098078086
+2024-11-27 22:29:45.155 | INFO     | solver:test:310 - carrier SnR: 17.76044273376465
+2024-11-27 22:29:45.155 | INFO     | solver:test:311 - message loss: 0.17856842042907836
+2024-11-27 22:29:45.156 | INFO     | solver:test:312 - message SnR: 8.150736808776855
+2024-11-27 22:29:45.159 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:33:50.714 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:33:50.715 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 39_epoch
+2024-11-27 22:33:50.722 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:33:50.723 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:33:50.723 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:34:04.868 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:34:04.868 | INFO     | solver:test:309 - carrier loss: 0.011475999839603901
+2024-11-27 22:34:04.869 | INFO     | solver:test:310 - carrier SnR: 20.0167293548584
+2024-11-27 22:34:04.869 | INFO     | solver:test:311 - message loss: 0.21068559941791354
+2024-11-27 22:34:04.869 | INFO     | solver:test:312 - message SnR: 7.4205322265625
+2024-11-27 22:34:04.871 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:38:10.351 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:38:10.351 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 40_epoch
+2024-11-27 22:38:10.359 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:38:10.360 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:38:10.360 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:38:24.457 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:38:24.458 | INFO     | solver:test:309 - carrier loss: 0.012009979817011053
+2024-11-27 22:38:24.458 | INFO     | solver:test:310 - carrier SnR: 19.81905174255371
+2024-11-27 22:38:24.458 | INFO     | solver:test:311 - message loss: 0.1815778244109381
+2024-11-27 22:38:24.459 | INFO     | solver:test:312 - message SnR: 8.074478149414062
+2024-11-27 22:38:24.461 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:42:29.967 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:42:29.967 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 41_epoch
+2024-11-27 22:42:29.980 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:42:29.981 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:42:29.981 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:42:43.980 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:42:43.980 | INFO     | solver:test:309 - carrier loss: 0.011222741729210294
+2024-11-27 22:42:43.980 | INFO     | solver:test:310 - carrier SnR: 20.112722396850586
+2024-11-27 22:42:43.981 | INFO     | solver:test:311 - message loss: 0.1862283493318255
+2024-11-27 22:42:43.981 | INFO     | solver:test:312 - message SnR: 7.96032190322876
+2024-11-27 22:42:43.985 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:46:49.496 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:46:49.497 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 42_epoch
+2024-11-27 22:46:49.506 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:46:49.507 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:46:49.507 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:47:03.607 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:47:03.607 | INFO     | solver:test:309 - carrier loss: 0.01147707344757186
+2024-11-27 22:47:03.608 | INFO     | solver:test:310 - carrier SnR: 20.015506744384766
+2024-11-27 22:47:03.608 | INFO     | solver:test:311 - message loss: 0.17354308246147065
+2024-11-27 22:47:03.608 | INFO     | solver:test:312 - message SnR: 8.27493953704834
+2024-11-27 22:47:03.610 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:51:08.892 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:51:08.893 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 43_epoch
+2024-11-27 22:51:08.901 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:51:08.901 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:51:08.901 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:51:22.875 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:51:22.875 | INFO     | solver:test:309 - carrier loss: 0.013513028385147216
+2024-11-27 22:51:22.876 | INFO     | solver:test:310 - carrier SnR: 19.307052612304688
+2024-11-27 22:51:22.876 | INFO     | solver:test:311 - message loss: 0.1715117163128323
+2024-11-27 22:51:22.877 | INFO     | solver:test:312 - message SnR: 8.321268081665039
+2024-11-27 22:51:22.879 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:55:27.846 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:55:27.847 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 44_epoch
+2024-11-27 22:55:27.862 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:55:27.863 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:55:27.863 | INFO     | solver:test:290 - start testing...
+2024-11-27 22:55:41.782 | INFO     | solver:test:308 - finished testing!
+2024-11-27 22:55:41.783 | INFO     | solver:test:309 - carrier loss: 0.013334847070158475
+2024-11-27 22:55:41.784 | INFO     | solver:test:310 - carrier SnR: 19.36638069152832
+2024-11-27 22:55:41.784 | INFO     | solver:test:311 - message loss: 0.17333368176505679
+2024-11-27 22:55:41.785 | INFO     | solver:test:312 - message SnR: 8.276174545288086
+2024-11-27 22:55:41.787 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 22:59:46.864 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:59:46.865 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 45_epoch
+2024-11-27 22:59:46.873 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 22:59:46.874 | INFO     | solver:test:287 - phase: validation
+2024-11-27 22:59:46.874 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:00:00.910 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:00:00.910 | INFO     | solver:test:309 - carrier loss: 0.011274134163700399
+2024-11-27 23:00:00.911 | INFO     | solver:test:310 - carrier SnR: 20.092926025390625
+2024-11-27 23:00:00.911 | INFO     | solver:test:311 - message loss: 0.1742707279229921
+2024-11-27 23:00:00.911 | INFO     | solver:test:312 - message SnR: 8.250245094299316
+2024-11-27 23:00:00.913 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:04:06.334 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:04:06.335 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 46_epoch
+2024-11-27 23:04:06.342 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:04:06.343 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:04:06.343 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:04:20.147 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:04:20.148 | INFO     | solver:test:309 - carrier loss: 0.014427199575399596
+2024-11-27 23:04:20.148 | INFO     | solver:test:310 - carrier SnR: 19.023944854736328
+2024-11-27 23:04:20.149 | INFO     | solver:test:311 - message loss: 0.1747882894816853
+2024-11-27 23:04:20.149 | INFO     | solver:test:312 - message SnR: 8.23888874053955
+2024-11-27 23:04:20.150 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:08:24.502 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:08:24.503 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 47_epoch
+2024-11-27 23:08:24.510 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:08:24.511 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:08:24.511 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:08:38.387 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:08:38.388 | INFO     | solver:test:309 - carrier loss: 0.012133492896008112
+2024-11-27 23:08:38.388 | INFO     | solver:test:310 - carrier SnR: 19.776479721069336
+2024-11-27 23:08:38.388 | INFO     | solver:test:311 - message loss: 0.17593857208414684
+2024-11-27 23:08:38.388 | INFO     | solver:test:312 - message SnR: 8.2176513671875
+2024-11-27 23:08:38.391 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:12:42.250 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:12:42.250 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 48_epoch
+2024-11-27 23:12:42.256 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:12:42.256 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:12:42.256 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:12:56.005 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:12:56.005 | INFO     | solver:test:309 - carrier loss: 0.01301598653847736
+2024-11-27 23:12:56.005 | INFO     | solver:test:310 - carrier SnR: 19.47130012512207
+2024-11-27 23:12:56.005 | INFO     | solver:test:311 - message loss: 0.1761525994728482
+2024-11-27 23:12:56.006 | INFO     | solver:test:312 - message SnR: 8.208276748657227
+2024-11-27 23:12:56.008 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:16:59.774 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:16:59.775 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 49_epoch
+2024-11-27 23:16:59.789 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:16:59.790 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:16:59.790 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:17:13.507 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:17:13.507 | INFO     | solver:test:309 - carrier loss: 0.013308061700728204
+2024-11-27 23:17:13.508 | INFO     | solver:test:310 - carrier SnR: 19.374216079711914
+2024-11-27 23:17:13.508 | INFO     | solver:test:311 - message loss: 0.1787381668885549
+2024-11-27 23:17:13.508 | INFO     | solver:test:312 - message SnR: 8.143170356750488
+2024-11-27 23:17:13.510 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:21:17.185 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:21:17.185 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 50_epoch
+2024-11-27 23:21:17.191 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:21:17.191 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:21:17.191 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:21:30.924 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:21:30.925 | INFO     | solver:test:309 - carrier loss: 0.010928941151452444
+2024-11-27 23:21:30.926 | INFO     | solver:test:310 - carrier SnR: 20.228342056274414
+2024-11-27 23:21:30.926 | INFO     | solver:test:311 - message loss: 0.17432373632041234
+2024-11-27 23:21:30.926 | INFO     | solver:test:312 - message SnR: 8.251299858093262
+2024-11-27 23:21:30.928 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:25:34.387 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:25:34.387 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 51_epoch
+2024-11-27 23:25:34.392 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:25:34.393 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:25:34.393 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:25:48.154 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:25:48.155 | INFO     | solver:test:309 - carrier loss: 0.011561382517573379
+2024-11-27 23:25:48.155 | INFO     | solver:test:310 - carrier SnR: 19.98452377319336
+2024-11-27 23:25:48.156 | INFO     | solver:test:311 - message loss: 0.174972747171682
+2024-11-27 23:25:48.156 | INFO     | solver:test:312 - message SnR: 8.234957695007324
+2024-11-27 23:25:48.160 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:29:52.066 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:29:52.066 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 52_epoch
+2024-11-27 23:29:52.072 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:29:52.073 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:29:52.073 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:30:05.835 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:30:05.835 | INFO     | solver:test:309 - carrier loss: 0.014135856166600234
+2024-11-27 23:30:05.836 | INFO     | solver:test:310 - carrier SnR: 19.113386154174805
+2024-11-27 23:30:05.836 | INFO     | solver:test:311 - message loss: 0.17625121583068182
+2024-11-27 23:30:05.836 | INFO     | solver:test:312 - message SnR: 8.200984954833984
+2024-11-27 23:30:05.838 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:34:09.904 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:34:09.904 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 53_epoch
+2024-11-27 23:34:09.910 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:34:09.911 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:34:09.911 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:34:23.580 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:34:23.581 | INFO     | solver:test:309 - carrier loss: 0.011004970867245917
+2024-11-27 23:34:23.581 | INFO     | solver:test:310 - carrier SnR: 20.198307037353516
+2024-11-27 23:34:23.581 | INFO     | solver:test:311 - message loss: 0.17158447608115182
+2024-11-27 23:34:23.582 | INFO     | solver:test:312 - message SnR: 8.322476387023926
+2024-11-27 23:34:23.584 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:38:27.467 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:38:27.467 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 54_epoch
+2024-11-27 23:38:27.474 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:38:27.474 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:38:27.474 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:38:41.224 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:38:41.224 | INFO     | solver:test:309 - carrier loss: 0.011775411842834382
+2024-11-27 23:38:41.225 | INFO     | solver:test:310 - carrier SnR: 19.904401779174805
+2024-11-27 23:38:41.225 | INFO     | solver:test:311 - message loss: 0.17089772721131644
+2024-11-27 23:38:41.225 | INFO     | solver:test:312 - message SnR: 8.341638565063477
+2024-11-27 23:38:41.227 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:42:45.194 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:42:45.195 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 55_epoch
+2024-11-27 23:42:45.200 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:42:45.200 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:42:45.200 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:42:58.959 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:42:58.959 | INFO     | solver:test:309 - carrier loss: 0.013801761976783239
+2024-11-27 23:42:58.960 | INFO     | solver:test:310 - carrier SnR: 19.216909408569336
+2024-11-27 23:42:58.960 | INFO     | solver:test:311 - message loss: 0.19205353184351845
+2024-11-27 23:42:58.960 | INFO     | solver:test:312 - message SnR: 7.819031238555908
+2024-11-27 23:42:58.962 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:47:02.885 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:47:02.886 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 56_epoch
+2024-11-27 23:47:02.892 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:47:02.893 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:47:02.893 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:47:16.678 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:47:16.678 | INFO     | solver:test:309 - carrier loss: 0.01251974083956272
+2024-11-27 23:47:16.679 | INFO     | solver:test:310 - carrier SnR: 19.639522552490234
+2024-11-27 23:47:16.679 | INFO     | solver:test:311 - message loss: 0.17956185873065675
+2024-11-27 23:47:16.679 | INFO     | solver:test:312 - message SnR: 8.12337875366211
+2024-11-27 23:47:16.681 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:51:20.804 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:51:20.805 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 57_epoch
+2024-11-27 23:51:20.813 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:51:20.814 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:51:20.814 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:51:34.581 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:51:34.582 | INFO     | solver:test:309 - carrier loss: 0.012080895344889353
+2024-11-27 23:51:34.582 | INFO     | solver:test:310 - carrier SnR: 19.79348373413086
+2024-11-27 23:51:34.582 | INFO     | solver:test:311 - message loss: 0.1707656705190265
+2024-11-27 23:51:34.582 | INFO     | solver:test:312 - message SnR: 8.343626976013184
+2024-11-27 23:51:34.584 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:55:38.662 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:55:38.663 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 58_epoch
+2024-11-27 23:55:38.677 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:55:38.677 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:55:38.677 | INFO     | solver:test:290 - start testing...
+2024-11-27 23:55:52.443 | INFO     | solver:test:308 - finished testing!
+2024-11-27 23:55:52.443 | INFO     | solver:test:309 - carrier loss: 0.011148206224398953
+2024-11-27 23:55:52.443 | INFO     | solver:test:310 - carrier SnR: 20.142431259155273
+2024-11-27 23:55:52.444 | INFO     | solver:test:311 - message loss: 0.18601314628881122
+2024-11-27 23:55:52.444 | INFO     | solver:test:312 - message SnR: 7.964527130126953
+2024-11-27 23:55:52.446 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-27 23:59:56.287 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:59:56.291 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 59_epoch
+2024-11-27 23:59:56.306 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-27 23:59:56.306 | INFO     | solver:test:287 - phase: validation
+2024-11-27 23:59:56.306 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:00:09.987 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:00:09.987 | INFO     | solver:test:309 - carrier loss: 0.012803357124092087
+2024-11-28 00:00:09.988 | INFO     | solver:test:310 - carrier SnR: 19.542137145996094
+2024-11-28 00:00:09.988 | INFO     | solver:test:311 - message loss: 0.1747330411795586
+2024-11-28 00:00:09.989 | INFO     | solver:test:312 - message SnR: 8.24258041381836
+2024-11-28 00:00:09.992 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:04:13.470 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:04:13.471 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 60_epoch
+2024-11-28 00:04:13.488 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:04:13.489 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:04:13.489 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:04:27.252 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:04:27.252 | INFO     | solver:test:309 - carrier loss: 0.011771901939359923
+2024-11-28 00:04:27.253 | INFO     | solver:test:310 - carrier SnR: 19.906982421875
+2024-11-28 00:04:27.253 | INFO     | solver:test:311 - message loss: 0.17184800512733914
+2024-11-28 00:04:27.253 | INFO     | solver:test:312 - message SnR: 8.319229125976562
+2024-11-28 00:04:27.255 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:08:31.208 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:08:31.209 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 61_epoch
+2024-11-28 00:08:31.215 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:08:31.216 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:08:31.216 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:08:44.900 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:08:44.900 | INFO     | solver:test:309 - carrier loss: 0.011070441824221422
+2024-11-28 00:08:44.901 | INFO     | solver:test:310 - carrier SnR: 20.17262840270996
+2024-11-28 00:08:44.901 | INFO     | solver:test:311 - message loss: 0.1664302603356422
+2024-11-28 00:08:44.901 | INFO     | solver:test:312 - message SnR: 8.460511207580566
+2024-11-28 00:08:44.903 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:12:48.956 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:12:48.957 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 62_epoch
+2024-11-28 00:12:48.963 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:12:48.963 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:12:48.963 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:13:02.710 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:13:02.711 | INFO     | solver:test:309 - carrier loss: 0.0092259334429862
+2024-11-28 00:13:02.711 | INFO     | solver:test:310 - carrier SnR: 20.963207244873047
+2024-11-28 00:13:02.711 | INFO     | solver:test:311 - message loss: 0.17275730946234294
+2024-11-28 00:13:02.711 | INFO     | solver:test:312 - message SnR: 8.297128677368164
+2024-11-28 00:13:02.714 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:17:06.717 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:17:06.717 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 63_epoch
+2024-11-28 00:17:06.723 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:17:06.724 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:17:06.724 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:17:20.489 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:17:20.489 | INFO     | solver:test:309 - carrier loss: 0.012151064986865672
+2024-11-28 00:17:20.490 | INFO     | solver:test:310 - carrier SnR: 19.76866912841797
+2024-11-28 00:17:20.490 | INFO     | solver:test:311 - message loss: 0.17214571885646335
+2024-11-28 00:17:20.490 | INFO     | solver:test:312 - message SnR: 8.308754920959473
+2024-11-28 00:17:20.492 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:21:24.530 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:21:24.531 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 64_epoch
+2024-11-28 00:21:24.538 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:21:24.539 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:21:24.539 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:21:38.318 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:21:38.318 | INFO     | solver:test:309 - carrier loss: 0.010979944145277379
+2024-11-28 00:21:38.319 | INFO     | solver:test:310 - carrier SnR: 20.20789337158203
+2024-11-28 00:21:38.319 | INFO     | solver:test:311 - message loss: 0.16840297232071558
+2024-11-28 00:21:38.320 | INFO     | solver:test:312 - message SnR: 8.409006118774414
+2024-11-28 00:21:38.323 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:25:42.148 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:25:42.148 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 65_epoch
+2024-11-28 00:25:42.155 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:25:42.156 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:25:42.156 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:25:55.959 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:25:55.959 | INFO     | solver:test:309 - carrier loss: 0.010275934645462604
+2024-11-28 00:25:55.960 | INFO     | solver:test:310 - carrier SnR: 20.495498657226562
+2024-11-28 00:25:55.960 | INFO     | solver:test:311 - message loss: 0.17034341785169782
+2024-11-28 00:25:55.960 | INFO     | solver:test:312 - message SnR: 8.358560562133789
+2024-11-28 00:25:55.962 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:29:59.884 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:29:59.884 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 66_epoch
+2024-11-28 00:29:59.892 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:29:59.892 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:29:59.892 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:30:13.662 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:30:13.662 | INFO     | solver:test:309 - carrier loss: 0.009823635190961853
+2024-11-28 00:30:13.663 | INFO     | solver:test:310 - carrier SnR: 20.690719604492188
+2024-11-28 00:30:13.663 | INFO     | solver:test:311 - message loss: 0.16981823044636893
+2024-11-28 00:30:13.663 | INFO     | solver:test:312 - message SnR: 8.372541427612305
+2024-11-28 00:30:13.665 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:34:17.743 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:34:17.744 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 67_epoch
+2024-11-28 00:34:17.751 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:34:17.751 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:34:17.751 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:34:31.438 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:34:31.439 | INFO     | solver:test:309 - carrier loss: 0.010947595557404889
+2024-11-28 00:34:31.439 | INFO     | solver:test:310 - carrier SnR: 20.221426010131836
+2024-11-28 00:34:31.439 | INFO     | solver:test:311 - message loss: 0.17273409912983576
+2024-11-28 00:34:31.440 | INFO     | solver:test:312 - message SnR: 8.296175003051758
+2024-11-28 00:34:31.442 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:38:35.527 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:38:35.528 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 68_epoch
+2024-11-28 00:38:35.534 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:38:35.534 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:38:35.534 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:38:49.277 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:38:49.277 | INFO     | solver:test:309 - carrier loss: 0.010813922340434694
+2024-11-28 00:38:49.278 | INFO     | solver:test:310 - carrier SnR: 20.27448081970215
+2024-11-28 00:38:49.278 | INFO     | solver:test:311 - message loss: 0.16760499881846563
+2024-11-28 00:38:49.278 | INFO     | solver:test:312 - message SnR: 8.430534362792969
+2024-11-28 00:38:49.280 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:42:53.443 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:42:53.444 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 69_epoch
+2024-11-28 00:42:53.452 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:42:53.452 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:42:53.452 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:43:07.223 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:43:07.224 | INFO     | solver:test:309 - carrier loss: 0.011584511485009913
+2024-11-28 00:43:07.224 | INFO     | solver:test:310 - carrier SnR: 19.976438522338867
+2024-11-28 00:43:07.224 | INFO     | solver:test:311 - message loss: 0.17402845443714232
+2024-11-28 00:43:07.225 | INFO     | solver:test:312 - message SnR: 8.263361930847168
+2024-11-28 00:43:07.227 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:47:11.285 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:47:11.285 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 70_epoch
+2024-11-28 00:47:11.293 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:47:11.294 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:47:11.294 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:47:25.011 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:47:25.011 | INFO     | solver:test:309 - carrier loss: 0.009572482224376429
+2024-11-28 00:47:25.011 | INFO     | solver:test:310 - carrier SnR: 20.80379295349121
+2024-11-28 00:47:25.011 | INFO     | solver:test:311 - message loss: 0.1709086164122536
+2024-11-28 00:47:25.012 | INFO     | solver:test:312 - message SnR: 8.340563774108887
+2024-11-28 00:47:25.013 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:51:28.776 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:51:28.777 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 71_epoch
+2024-11-28 00:51:28.784 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:51:28.784 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:51:28.784 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:51:42.557 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:51:42.557 | INFO     | solver:test:309 - carrier loss: 0.013946438533446145
+2024-11-28 00:51:42.557 | INFO     | solver:test:310 - carrier SnR: 19.170927047729492
+2024-11-28 00:51:42.557 | INFO     | solver:test:311 - message loss: 0.17394817088331496
+2024-11-28 00:51:42.558 | INFO     | solver:test:312 - message SnR: 8.258262634277344
+2024-11-28 00:51:42.560 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 00:55:46.072 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:55:46.072 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 72_epoch
+2024-11-28 00:55:46.079 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 00:55:46.079 | INFO     | solver:test:287 - phase: validation
+2024-11-28 00:55:46.079 | INFO     | solver:test:290 - start testing...
+2024-11-28 00:55:59.842 | INFO     | solver:test:308 - finished testing!
+2024-11-28 00:55:59.842 | INFO     | solver:test:309 - carrier loss: 0.010194100927384127
+2024-11-28 00:55:59.843 | INFO     | solver:test:310 - carrier SnR: 20.531375885009766
+2024-11-28 00:55:59.843 | INFO     | solver:test:311 - message loss: 0.17598174737086372
+2024-11-28 00:55:59.843 | INFO     | solver:test:312 - message SnR: 8.20960521697998
+2024-11-28 00:55:59.845 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:00:03.868 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:00:03.869 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 73_epoch
+2024-11-28 01:00:03.876 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:00:03.876 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:00:03.876 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:00:17.655 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:00:17.655 | INFO     | solver:test:309 - carrier loss: 0.013320941300619216
+2024-11-28 01:00:17.656 | INFO     | solver:test:310 - carrier SnR: 19.3709716796875
+2024-11-28 01:00:17.656 | INFO     | solver:test:311 - message loss: 0.17090458127241287
+2024-11-28 01:00:17.656 | INFO     | solver:test:312 - message SnR: 8.342368125915527
+2024-11-28 01:00:17.658 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:04:21.639 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:04:21.640 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 74_epoch
+2024-11-28 01:04:21.648 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:04:21.649 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:04:21.649 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:04:35.451 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:04:35.451 | INFO     | solver:test:309 - carrier loss: 0.018857265275622172
+2024-11-28 01:04:35.452 | INFO     | solver:test:310 - carrier SnR: 17.866565704345703
+2024-11-28 01:04:35.452 | INFO     | solver:test:311 - message loss: 0.17224505732929896
+2024-11-28 01:04:35.452 | INFO     | solver:test:312 - message SnR: 8.307150840759277
+2024-11-28 01:04:35.454 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:08:39.567 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:08:39.568 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 75_epoch
+2024-11-28 01:08:39.577 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:08:39.578 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:08:39.578 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:08:53.571 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:08:53.571 | INFO     | solver:test:309 - carrier loss: 0.014707965229357045
+2024-11-28 01:08:53.572 | INFO     | solver:test:310 - carrier SnR: 18.941532135009766
+2024-11-28 01:08:53.572 | INFO     | solver:test:311 - message loss: 0.17335221372426501
+2024-11-28 01:08:53.572 | INFO     | solver:test:312 - message SnR: 8.280255317687988
+2024-11-28 01:08:53.574 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:12:57.630 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:12:57.631 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 76_epoch
+2024-11-28 01:12:57.637 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:12:57.638 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:12:57.638 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:13:11.445 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:13:11.446 | INFO     | solver:test:309 - carrier loss: 0.014022138191475755
+2024-11-28 01:13:11.446 | INFO     | solver:test:310 - carrier SnR: 19.148780822753906
+2024-11-28 01:13:11.446 | INFO     | solver:test:311 - message loss: 0.17143203613777008
+2024-11-28 01:13:11.447 | INFO     | solver:test:312 - message SnR: 8.326899528503418
+2024-11-28 01:13:11.449 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:17:15.318 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:17:15.319 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 77_epoch
+2024-11-28 01:17:15.325 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:17:15.325 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:17:15.325 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:17:29.118 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:17:29.118 | INFO     | solver:test:309 - carrier loss: 0.010178789023369078
+2024-11-28 01:17:29.118 | INFO     | solver:test:310 - carrier SnR: 20.53757095336914
+2024-11-28 01:17:29.119 | INFO     | solver:test:311 - message loss: 0.173092283308506
+2024-11-28 01:17:29.119 | INFO     | solver:test:312 - message SnR: 8.285266876220703
+2024-11-28 01:17:29.121 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:21:32.803 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:21:32.804 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 78_epoch
+2024-11-28 01:21:32.811 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:21:32.811 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:21:32.811 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:21:46.511 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:21:46.511 | INFO     | solver:test:309 - carrier loss: 0.010107277670786494
+2024-11-28 01:21:46.511 | INFO     | solver:test:310 - carrier SnR: 20.567611694335938
+2024-11-28 01:21:46.511 | INFO     | solver:test:311 - message loss: 0.16815955333766483
+2024-11-28 01:21:46.512 | INFO     | solver:test:312 - message SnR: 8.418572425842285
+2024-11-28 01:21:46.513 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:25:50.421 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:25:50.421 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 79_epoch
+2024-11-28 01:25:50.428 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:25:50.429 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:25:50.429 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:26:04.221 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:26:04.222 | INFO     | solver:test:309 - carrier loss: 0.013314588172804741
+2024-11-28 01:26:04.223 | INFO     | solver:test:310 - carrier SnR: 19.372976303100586
+2024-11-28 01:26:04.223 | INFO     | solver:test:311 - message loss: 0.171000062118447
+2024-11-28 01:26:04.224 | INFO     | solver:test:312 - message SnR: 8.339808464050293
+2024-11-28 01:26:04.225 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:30:08.158 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:30:08.159 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 80_epoch
+2024-11-28 01:30:08.168 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:30:08.169 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:30:08.169 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:30:21.882 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:30:21.882 | INFO     | solver:test:309 - carrier loss: 0.013676097986125757
+2024-11-28 01:30:21.883 | INFO     | solver:test:310 - carrier SnR: 19.2568416595459
+2024-11-28 01:30:21.883 | INFO     | solver:test:311 - message loss: 0.17051731735940964
+2024-11-28 01:30:21.883 | INFO     | solver:test:312 - message SnR: 8.351187705993652
+2024-11-28 01:30:21.886 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:34:26.020 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:34:26.020 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 81_epoch
+2024-11-28 01:34:26.026 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:34:26.027 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:34:26.027 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:34:39.746 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:34:39.746 | INFO     | solver:test:309 - carrier loss: 0.012441506845847008
+2024-11-28 01:34:39.746 | INFO     | solver:test:310 - carrier SnR: 19.667049407958984
+2024-11-28 01:34:39.746 | INFO     | solver:test:311 - message loss: 0.16806381337699436
+2024-11-28 01:34:39.747 | INFO     | solver:test:312 - message SnR: 8.412641525268555
+2024-11-28 01:34:39.749 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:38:43.799 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:38:43.800 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 82_epoch
+2024-11-28 01:38:43.805 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:38:43.806 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:38:43.806 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:38:57.602 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:38:57.602 | INFO     | solver:test:309 - carrier loss: 0.010528536557796456
+2024-11-28 01:38:57.603 | INFO     | solver:test:310 - carrier SnR: 20.389862060546875
+2024-11-28 01:38:57.603 | INFO     | solver:test:311 - message loss: 0.167079359292984
+2024-11-28 01:38:57.603 | INFO     | solver:test:312 - message SnR: 8.441628456115723
+2024-11-28 01:38:57.605 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:43:01.428 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:43:01.429 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 83_epoch
+2024-11-28 01:43:01.436 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:43:01.436 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:43:01.436 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:43:15.179 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:43:15.179 | INFO     | solver:test:309 - carrier loss: 0.01071586325350735
+2024-11-28 01:43:15.179 | INFO     | solver:test:310 - carrier SnR: 20.314178466796875
+2024-11-28 01:43:15.179 | INFO     | solver:test:311 - message loss: 0.1672164441810714
+2024-11-28 01:43:15.180 | INFO     | solver:test:312 - message SnR: 8.437045097351074
+2024-11-28 01:43:15.181 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:47:18.704 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:47:18.705 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 84_epoch
+2024-11-28 01:47:18.710 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:47:18.711 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:47:18.711 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:47:32.445 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:47:32.446 | INFO     | solver:test:309 - carrier loss: 0.011214351725010644
+2024-11-28 01:47:32.446 | INFO     | solver:test:310 - carrier SnR: 20.11737823486328
+2024-11-28 01:47:32.446 | INFO     | solver:test:311 - message loss: 0.1716680538559717
+2024-11-28 01:47:32.447 | INFO     | solver:test:312 - message SnR: 8.321471214294434
+2024-11-28 01:47:32.449 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:51:36.428 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:51:36.429 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 85_epoch
+2024-11-28 01:51:36.437 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:51:36.437 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:51:36.437 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:51:50.197 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:51:50.198 | INFO     | solver:test:309 - carrier loss: 0.013554172220802496
+2024-11-28 01:51:50.198 | INFO     | solver:test:310 - carrier SnR: 19.295988082885742
+2024-11-28 01:51:50.198 | INFO     | solver:test:311 - message loss: 0.16952185332775116
+2024-11-28 01:51:50.198 | INFO     | solver:test:312 - message SnR: 8.379857063293457
+2024-11-28 01:51:50.200 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 01:55:54.315 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:55:54.316 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 86_epoch
+2024-11-28 01:55:54.321 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 01:55:54.322 | INFO     | solver:test:287 - phase: validation
+2024-11-28 01:55:54.322 | INFO     | solver:test:290 - start testing...
+2024-11-28 01:56:08.086 | INFO     | solver:test:308 - finished testing!
+2024-11-28 01:56:08.086 | INFO     | solver:test:309 - carrier loss: 0.013950251323717928
+2024-11-28 01:56:08.087 | INFO     | solver:test:310 - carrier SnR: 19.17078399658203
+2024-11-28 01:56:08.087 | INFO     | solver:test:311 - message loss: 0.17088625343546035
+2024-11-28 01:56:08.087 | INFO     | solver:test:312 - message SnR: 8.338262557983398
+2024-11-28 01:56:08.089 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:00:12.108 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:00:12.109 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 87_epoch
+2024-11-28 02:00:12.115 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:00:12.115 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:00:12.115 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:00:25.923 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:00:25.923 | INFO     | solver:test:309 - carrier loss: 0.010673382674299535
+2024-11-28 02:00:25.924 | INFO     | solver:test:310 - carrier SnR: 20.33144760131836
+2024-11-28 02:00:25.924 | INFO     | solver:test:311 - message loss: 0.17085584513251745
+2024-11-28 02:00:25.924 | INFO     | solver:test:312 - message SnR: 8.344477653503418
+2024-11-28 02:00:25.927 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:04:29.642 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:04:29.643 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 88_epoch
+2024-11-28 02:04:29.650 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:04:29.650 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:04:29.650 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:04:43.377 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:04:43.377 | INFO     | solver:test:309 - carrier loss: 0.013147177647740121
+2024-11-28 02:04:43.377 | INFO     | solver:test:310 - carrier SnR: 19.427352905273438
+2024-11-28 02:04:43.378 | INFO     | solver:test:311 - message loss: 0.16855609688966994
+2024-11-28 02:04:43.378 | INFO     | solver:test:312 - message SnR: 8.40206527709961
+2024-11-28 02:04:43.381 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:08:47.103 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:08:47.103 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 89_epoch
+2024-11-28 02:08:47.112 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:08:47.112 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:08:47.112 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:09:00.781 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:09:00.781 | INFO     | solver:test:309 - carrier loss: 0.010532685511168979
+2024-11-28 02:09:00.782 | INFO     | solver:test:310 - carrier SnR: 20.388704299926758
+2024-11-28 02:09:00.782 | INFO     | solver:test:311 - message loss: 0.1668210525124792
+2024-11-28 02:09:00.783 | INFO     | solver:test:312 - message SnR: 8.44851303100586
+2024-11-28 02:09:00.785 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:13:04.775 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:13:04.776 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 90_epoch
+2024-11-28 02:13:04.783 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:13:04.784 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:13:04.784 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:13:18.511 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:13:18.512 | INFO     | solver:test:309 - carrier loss: 0.011350292712450027
+2024-11-28 02:13:18.512 | INFO     | solver:test:310 - carrier SnR: 20.06440544128418
+2024-11-28 02:13:18.512 | INFO     | solver:test:311 - message loss: 0.16525537094899587
+2024-11-28 02:13:18.512 | INFO     | solver:test:312 - message SnR: 8.493098258972168
+2024-11-28 02:13:18.514 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:17:22.568 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:17:22.569 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 91_epoch
+2024-11-28 02:17:22.575 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:17:22.576 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:17:22.576 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:17:36.289 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:17:36.290 | INFO     | solver:test:309 - carrier loss: 0.011571238793077924
+2024-11-28 02:17:36.291 | INFO     | solver:test:310 - carrier SnR: 19.981536865234375
+2024-11-28 02:17:36.291 | INFO     | solver:test:311 - message loss: 0.16874174087766616
+2024-11-28 02:17:36.291 | INFO     | solver:test:312 - message SnR: 8.400009155273438
+2024-11-28 02:17:36.293 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:21:39.957 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:21:39.958 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 92_epoch
+2024-11-28 02:21:39.964 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:21:39.964 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:21:39.964 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:21:53.743 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:21:53.743 | INFO     | solver:test:309 - carrier loss: 0.015486831229830545
+2024-11-28 02:21:53.744 | INFO     | solver:test:310 - carrier SnR: 18.719039916992188
+2024-11-28 02:21:53.744 | INFO     | solver:test:311 - message loss: 0.1717425956139489
+2024-11-28 02:21:53.744 | INFO     | solver:test:312 - message SnR: 8.314570426940918
+2024-11-28 02:21:53.747 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:25:57.307 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:25:57.308 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 93_epoch
+2024-11-28 02:25:57.313 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:25:57.313 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:25:57.313 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:26:11.098 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:26:11.099 | INFO     | solver:test:309 - carrier loss: 0.010535092994807259
+2024-11-28 02:26:11.099 | INFO     | solver:test:310 - carrier SnR: 20.38813591003418
+2024-11-28 02:26:11.099 | INFO     | solver:test:311 - message loss: 0.168423453611987
+2024-11-28 02:26:11.100 | INFO     | solver:test:312 - message SnR: 8.4070463180542
+2024-11-28 02:26:11.101 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:30:15.106 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:30:15.107 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 94_epoch
+2024-11-28 02:30:15.112 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:30:15.112 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:30:15.112 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:30:28.874 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:30:28.875 | INFO     | solver:test:309 - carrier loss: 0.011250915523204539
+2024-11-28 02:30:28.875 | INFO     | solver:test:310 - carrier SnR: 20.102434158325195
+2024-11-28 02:30:28.875 | INFO     | solver:test:311 - message loss: 0.16649174962251906
+2024-11-28 02:30:28.876 | INFO     | solver:test:312 - message SnR: 8.461040496826172
+2024-11-28 02:30:28.878 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:34:32.878 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:34:32.879 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 95_epoch
+2024-11-28 02:34:32.884 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:34:32.885 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:34:32.885 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:34:46.668 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:34:46.669 | INFO     | solver:test:309 - carrier loss: 0.010550250284492023
+2024-11-28 02:34:46.669 | INFO     | solver:test:310 - carrier SnR: 20.382007598876953
+2024-11-28 02:34:46.670 | INFO     | solver:test:311 - message loss: 0.17127021082809993
+2024-11-28 02:34:46.670 | INFO     | solver:test:312 - message SnR: 8.333489418029785
+2024-11-28 02:34:46.672 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:38:50.694 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:38:50.695 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 96_epoch
+2024-11-28 02:38:50.701 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:38:50.702 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:38:50.702 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:39:04.454 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:39:04.454 | INFO     | solver:test:309 - carrier loss: 0.010416309851857404
+2024-11-28 02:39:04.454 | INFO     | solver:test:310 - carrier SnR: 20.436697006225586
+2024-11-28 02:39:04.454 | INFO     | solver:test:311 - message loss: 0.16709751032647632
+2024-11-28 02:39:04.455 | INFO     | solver:test:312 - message SnR: 8.445688247680664
+2024-11-28 02:39:04.457 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:43:08.213 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:43:08.214 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 97_epoch
+2024-11-28 02:43:08.220 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:43:08.220 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:43:08.220 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:43:21.997 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:43:21.997 | INFO     | solver:test:309 - carrier loss: 0.011041701963496587
+2024-11-28 02:43:21.997 | INFO     | solver:test:310 - carrier SnR: 20.184852600097656
+2024-11-28 02:43:21.997 | INFO     | solver:test:311 - message loss: 0.17104556269588925
+2024-11-28 02:43:21.998 | INFO     | solver:test:312 - message SnR: 8.339545249938965
+2024-11-28 02:43:22.000 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:47:25.594 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:47:25.595 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 98_epoch
+2024-11-28 02:47:25.601 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:47:25.601 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:47:25.602 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:47:39.346 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:47:39.346 | INFO     | solver:test:309 - carrier loss: 0.010616666386051783
+2024-11-28 02:47:39.347 | INFO     | solver:test:310 - carrier SnR: 20.35436248779297
+2024-11-28 02:47:39.347 | INFO     | solver:test:311 - message loss: 0.1681023007110944
+2024-11-28 02:47:39.347 | INFO     | solver:test:312 - message SnR: 8.416824340820312
+2024-11-28 02:47:39.349 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:51:43.355 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:51:43.356 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 99_epoch
+2024-11-28 02:51:43.362 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:51:43.362 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:51:43.362 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:51:57.142 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:51:57.143 | INFO     | solver:test:309 - carrier loss: 0.011455562557019884
+2024-11-28 02:51:57.143 | INFO     | solver:test:310 - carrier SnR: 20.024675369262695
+2024-11-28 02:51:57.143 | INFO     | solver:test:311 - message loss: 0.16819267353368184
+2024-11-28 02:51:57.143 | INFO     | solver:test:312 - message SnR: 8.415748596191406
+2024-11-28 02:51:57.145 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 02:56:01.057 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:56:01.057 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 100_epoch
+2024-11-28 02:56:01.063 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 02:56:01.063 | INFO     | solver:test:287 - phase: validation
+2024-11-28 02:56:01.063 | INFO     | solver:test:290 - start testing...
+2024-11-28 02:56:14.851 | INFO     | solver:test:308 - finished testing!
+2024-11-28 02:56:14.851 | INFO     | solver:test:309 - carrier loss: 0.012137695940004455
+2024-11-28 02:56:14.852 | INFO     | solver:test:310 - carrier SnR: 19.774751663208008
+2024-11-28 02:56:14.852 | INFO     | solver:test:311 - message loss: 0.16941684874750318
+2024-11-28 02:56:14.853 | INFO     | solver:test:312 - message SnR: 8.37975788116455
+2024-11-28 02:56:14.857 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:00:18.904 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:00:18.905 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 101_epoch
+2024-11-28 03:00:18.911 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:00:18.912 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:00:18.912 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:00:32.694 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:00:32.694 | INFO     | solver:test:309 - carrier loss: 0.011277475231696688
+2024-11-28 03:00:32.694 | INFO     | solver:test:310 - carrier SnR: 20.09305763244629
+2024-11-28 03:00:32.694 | INFO     | solver:test:311 - message loss: 0.16915240765564024
+2024-11-28 03:00:32.695 | INFO     | solver:test:312 - message SnR: 8.386577606201172
+2024-11-28 03:00:32.696 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:04:36.776 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:04:36.776 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 102_epoch
+2024-11-28 03:04:36.783 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:04:36.783 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:04:36.783 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:04:50.569 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:04:50.570 | INFO     | solver:test:309 - carrier loss: 0.01037044758124957
+2024-11-28 03:04:50.570 | INFO     | solver:test:310 - carrier SnR: 20.455900192260742
+2024-11-28 03:04:50.570 | INFO     | solver:test:311 - message loss: 0.16639895855434358
+2024-11-28 03:04:50.570 | INFO     | solver:test:312 - message SnR: 8.460630416870117
+2024-11-28 03:04:50.572 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:08:54.590 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:08:54.591 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 103_epoch
+2024-11-28 03:08:54.597 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:08:54.597 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:08:54.597 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:09:08.385 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:09:08.386 | INFO     | solver:test:309 - carrier loss: 0.01187689182540727
+2024-11-28 03:09:08.387 | INFO     | solver:test:310 - carrier SnR: 19.868690490722656
+2024-11-28 03:09:08.387 | INFO     | solver:test:311 - message loss: 0.1681114944910246
+2024-11-28 03:09:08.387 | INFO     | solver:test:312 - message SnR: 8.41543197631836
+2024-11-28 03:09:08.389 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:13:12.443 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:13:12.444 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 104_epoch
+2024-11-28 03:13:12.463 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:13:12.464 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:13:12.464 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:13:26.223 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:13:26.223 | INFO     | solver:test:309 - carrier loss: 0.011540658594596954
+2024-11-28 03:13:26.223 | INFO     | solver:test:310 - carrier SnR: 19.993366241455078
+2024-11-28 03:13:26.223 | INFO     | solver:test:311 - message loss: 0.17267686034005786
+2024-11-28 03:13:26.224 | INFO     | solver:test:312 - message SnR: 8.292885780334473
+2024-11-28 03:13:26.226 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:17:30.220 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:17:30.221 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 105_epoch
+2024-11-28 03:17:30.226 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:17:30.226 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:17:30.226 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:17:44.009 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:17:44.010 | INFO     | solver:test:309 - carrier loss: 0.011387323162385396
+2024-11-28 03:17:44.010 | INFO     | solver:test:310 - carrier SnR: 20.051332473754883
+2024-11-28 03:17:44.010 | INFO     | solver:test:311 - message loss: 0.17403315185081392
+2024-11-28 03:17:44.010 | INFO     | solver:test:312 - message SnR: 8.259448051452637
+2024-11-28 03:17:44.013 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:21:47.943 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:21:47.944 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 106_epoch
+2024-11-28 03:21:47.950 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:21:47.951 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:21:47.951 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:22:01.597 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:22:01.597 | INFO     | solver:test:309 - carrier loss: 0.010389168983295796
+2024-11-28 03:22:01.598 | INFO     | solver:test:310 - carrier SnR: 20.448457717895508
+2024-11-28 03:22:01.598 | INFO     | solver:test:311 - message loss: 0.16696995934323658
+2024-11-28 03:22:01.598 | INFO     | solver:test:312 - message SnR: 8.44722843170166
+2024-11-28 03:22:01.601 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:26:05.637 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:26:05.638 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 107_epoch
+2024-11-28 03:26:05.643 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:26:05.644 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:26:05.644 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:26:19.389 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:26:19.390 | INFO     | solver:test:309 - carrier loss: 0.010446688160300255
+2024-11-28 03:26:19.390 | INFO     | solver:test:310 - carrier SnR: 20.424243927001953
+2024-11-28 03:26:19.390 | INFO     | solver:test:311 - message loss: 0.16652933188847133
+2024-11-28 03:26:19.390 | INFO     | solver:test:312 - message SnR: 8.460785865783691
+2024-11-28 03:26:19.393 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:30:23.416 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:30:23.417 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 108_epoch
+2024-11-28 03:30:23.427 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:30:23.427 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:30:23.427 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:30:37.216 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:30:37.216 | INFO     | solver:test:309 - carrier loss: 0.009783981353162772
+2024-11-28 03:30:37.217 | INFO     | solver:test:310 - carrier SnR: 20.708271026611328
+2024-11-28 03:30:37.217 | INFO     | solver:test:311 - message loss: 0.16611028580911577
+2024-11-28 03:30:37.217 | INFO     | solver:test:312 - message SnR: 8.471439361572266
+2024-11-28 03:30:37.219 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:34:41.248 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:34:41.249 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 109_epoch
+2024-11-28 03:34:41.257 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:34:41.258 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:34:41.258 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:34:55.036 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:34:55.036 | INFO     | solver:test:309 - carrier loss: 0.010011633991130761
+2024-11-28 03:34:55.036 | INFO     | solver:test:310 - carrier SnR: 20.608728408813477
+2024-11-28 03:34:55.036 | INFO     | solver:test:311 - message loss: 0.16643370557872075
+2024-11-28 03:34:55.037 | INFO     | solver:test:312 - message SnR: 8.464903831481934
+2024-11-28 03:34:55.038 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:38:59.032 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:38:59.033 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 110_epoch
+2024-11-28 03:38:59.039 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:38:59.040 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:38:59.040 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:39:12.753 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:39:12.753 | INFO     | solver:test:309 - carrier loss: 0.0107680144645865
+2024-11-28 03:39:12.753 | INFO     | solver:test:310 - carrier SnR: 20.293113708496094
+2024-11-28 03:39:12.753 | INFO     | solver:test:311 - message loss: 0.1672602774841445
+2024-11-28 03:39:12.754 | INFO     | solver:test:312 - message SnR: 8.439270973205566
+2024-11-28 03:39:12.756 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:43:16.832 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:43:16.833 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 111_epoch
+2024-11-28 03:43:16.840 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:43:16.841 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:43:16.841 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:43:30.654 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:43:30.654 | INFO     | solver:test:309 - carrier loss: 0.011165172423398683
+2024-11-28 03:43:30.655 | INFO     | solver:test:310 - carrier SnR: 20.136119842529297
+2024-11-28 03:43:30.655 | INFO     | solver:test:311 - message loss: 0.16752994356174317
+2024-11-28 03:43:30.655 | INFO     | solver:test:312 - message SnR: 8.431336402893066
+2024-11-28 03:43:30.657 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:47:34.728 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:47:34.729 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 112_epoch
+2024-11-28 03:47:34.735 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:47:34.735 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:47:34.736 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:47:48.510 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:47:48.511 | INFO     | solver:test:309 - carrier loss: 0.009601418180243364
+2024-11-28 03:47:48.511 | INFO     | solver:test:310 - carrier SnR: 20.790346145629883
+2024-11-28 03:47:48.512 | INFO     | solver:test:311 - message loss: 0.16584619785112048
+2024-11-28 03:47:48.512 | INFO     | solver:test:312 - message SnR: 8.476214408874512
+2024-11-28 03:47:48.514 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:51:52.540 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:51:52.541 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 113_epoch
+2024-11-28 03:51:52.549 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:51:52.550 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:51:52.550 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:52:06.296 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:52:06.297 | INFO     | solver:test:309 - carrier loss: 0.011517971414067442
+2024-11-28 03:52:06.298 | INFO     | solver:test:310 - carrier SnR: 20.00139808654785
+2024-11-28 03:52:06.298 | INFO     | solver:test:311 - message loss: 0.16820757966192942
+2024-11-28 03:52:06.298 | INFO     | solver:test:312 - message SnR: 8.412632942199707
+2024-11-28 03:52:06.300 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 03:56:10.380 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:56:10.381 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 114_epoch
+2024-11-28 03:56:10.388 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 03:56:10.388 | INFO     | solver:test:287 - phase: validation
+2024-11-28 03:56:10.388 | INFO     | solver:test:290 - start testing...
+2024-11-28 03:56:24.072 | INFO     | solver:test:308 - finished testing!
+2024-11-28 03:56:24.073 | INFO     | solver:test:309 - carrier loss: 0.011805099065578173
+2024-11-28 03:56:24.073 | INFO     | solver:test:310 - carrier SnR: 19.894577026367188
+2024-11-28 03:56:24.073 | INFO     | solver:test:311 - message loss: 0.1684771530211918
+2024-11-28 03:56:24.073 | INFO     | solver:test:312 - message SnR: 8.406128883361816
+2024-11-28 03:56:24.075 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:00:28.147 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:00:28.148 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 115_epoch
+2024-11-28 04:00:28.154 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:00:28.154 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:00:28.155 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:00:41.929 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:00:41.929 | INFO     | solver:test:309 - carrier loss: 0.009955762412458186
+2024-11-28 04:00:41.930 | INFO     | solver:test:310 - carrier SnR: 20.633272171020508
+2024-11-28 04:00:41.930 | INFO     | solver:test:311 - message loss: 0.16658436447855027
+2024-11-28 04:00:41.931 | INFO     | solver:test:312 - message SnR: 8.45714282989502
+2024-11-28 04:00:41.933 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:04:45.959 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:04:45.959 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 116_epoch
+2024-11-28 04:04:45.966 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:04:45.967 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:04:45.967 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:04:59.692 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:04:59.692 | INFO     | solver:test:309 - carrier loss: 0.01128359255750501
+2024-11-28 04:04:59.693 | INFO     | solver:test:310 - carrier SnR: 20.09058952331543
+2024-11-28 04:04:59.693 | INFO     | solver:test:311 - message loss: 0.16685433425600565
+2024-11-28 04:04:59.694 | INFO     | solver:test:312 - message SnR: 8.45262336730957
+2024-11-28 04:04:59.697 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:09:03.759 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:09:03.760 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 117_epoch
+2024-11-28 04:09:03.767 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:09:03.767 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:09:03.767 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:09:17.535 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:09:17.535 | INFO     | solver:test:309 - carrier loss: 0.009917065545561769
+2024-11-28 04:09:17.536 | INFO     | solver:test:310 - carrier SnR: 20.649951934814453
+2024-11-28 04:09:17.536 | INFO     | solver:test:311 - message loss: 0.16716359307368597
+2024-11-28 04:09:17.536 | INFO     | solver:test:312 - message SnR: 8.44183349609375
+2024-11-28 04:09:17.539 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:13:21.517 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:13:21.518 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 118_epoch
+2024-11-28 04:13:21.525 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:13:21.525 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:13:21.525 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:13:35.296 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:13:35.297 | INFO     | solver:test:309 - carrier loss: 0.009734365290829114
+2024-11-28 04:13:35.297 | INFO     | solver:test:310 - carrier SnR: 20.731027603149414
+2024-11-28 04:13:35.297 | INFO     | solver:test:311 - message loss: 0.16826895707183415
+2024-11-28 04:13:35.297 | INFO     | solver:test:312 - message SnR: 8.41357135772705
+2024-11-28 04:13:35.300 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:17:39.355 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:17:39.356 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 119_epoch
+2024-11-28 04:17:39.361 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:17:39.362 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:17:39.362 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:17:53.141 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:17:53.141 | INFO     | solver:test:309 - carrier loss: 0.009534101134964399
+2024-11-28 04:17:53.141 | INFO     | solver:test:310 - carrier SnR: 20.821258544921875
+2024-11-28 04:17:53.142 | INFO     | solver:test:311 - message loss: 0.16902789970239004
+2024-11-28 04:17:53.142 | INFO     | solver:test:312 - message SnR: 8.393645286560059
+2024-11-28 04:17:53.144 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:21:57.179 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:21:57.180 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 120_epoch
+2024-11-28 04:21:57.185 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:21:57.186 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:21:57.186 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:22:10.983 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:22:10.983 | INFO     | solver:test:309 - carrier loss: 0.01016296229014794
+2024-11-28 04:22:10.984 | INFO     | solver:test:310 - carrier SnR: 20.54413414001465
+2024-11-28 04:22:10.984 | INFO     | solver:test:311 - message loss: 0.16632079132019528
+2024-11-28 04:22:10.985 | INFO     | solver:test:312 - message SnR: 8.466572761535645
+2024-11-28 04:22:10.987 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:26:14.987 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:26:14.988 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 121_epoch
+2024-11-28 04:26:14.993 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:26:14.993 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:26:14.994 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:26:28.729 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:26:28.729 | INFO     | solver:test:309 - carrier loss: 0.014852625377003163
+2024-11-28 04:26:28.729 | INFO     | solver:test:310 - carrier SnR: 18.900161743164062
+2024-11-28 04:26:28.729 | INFO     | solver:test:311 - message loss: 0.17027915375573294
+2024-11-28 04:26:28.730 | INFO     | solver:test:312 - message SnR: 8.354806900024414
+2024-11-28 04:26:28.732 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:30:32.697 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:30:32.699 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 122_epoch
+2024-11-28 04:30:32.707 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:30:32.708 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:30:32.708 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:30:46.511 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:30:46.511 | INFO     | solver:test:309 - carrier loss: 0.011655251495540142
+2024-11-28 04:30:46.511 | INFO     | solver:test:310 - carrier SnR: 19.950746536254883
+2024-11-28 04:30:46.511 | INFO     | solver:test:311 - message loss: 0.16883362498548296
+2024-11-28 04:30:46.512 | INFO     | solver:test:312 - message SnR: 8.398818969726562
+2024-11-28 04:30:46.513 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:34:50.540 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:34:50.541 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 123_epoch
+2024-11-28 04:34:50.547 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:34:50.548 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:34:50.548 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:35:04.290 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:35:04.290 | INFO     | solver:test:309 - carrier loss: 0.012805877933426508
+2024-11-28 04:35:04.291 | INFO     | solver:test:310 - carrier SnR: 19.541749954223633
+2024-11-28 04:35:04.291 | INFO     | solver:test:311 - message loss: 0.17034024946273318
+2024-11-28 04:35:04.291 | INFO     | solver:test:312 - message SnR: 8.357481956481934
+2024-11-28 04:35:04.293 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:39:08.305 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:39:08.306 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 124_epoch
+2024-11-28 04:39:08.311 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:39:08.312 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:39:08.312 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:39:21.978 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:39:21.978 | INFO     | solver:test:309 - carrier loss: 0.009241973279073598
+2024-11-28 04:39:21.979 | INFO     | solver:test:310 - carrier SnR: 20.95606231689453
+2024-11-28 04:39:21.979 | INFO     | solver:test:311 - message loss: 0.1670204142019862
+2024-11-28 04:39:21.979 | INFO     | solver:test:312 - message SnR: 8.446184158325195
+2024-11-28 04:39:21.981 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:43:26.016 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:43:26.017 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 125_epoch
+2024-11-28 04:43:26.023 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:43:26.023 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:43:26.023 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:43:39.796 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:43:39.797 | INFO     | solver:test:309 - carrier loss: 0.015915700633611
+2024-11-28 04:43:39.797 | INFO     | solver:test:310 - carrier SnR: 18.60114097595215
+2024-11-28 04:43:39.797 | INFO     | solver:test:311 - message loss: 0.17357069963500613
+2024-11-28 04:43:39.798 | INFO     | solver:test:312 - message SnR: 8.271988868713379
+2024-11-28 04:43:39.799 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:47:43.812 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:47:43.812 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 126_epoch
+2024-11-28 04:47:43.818 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:47:43.819 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:47:43.819 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:47:57.518 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:47:57.518 | INFO     | solver:test:309 - carrier loss: 0.012488298162463166
+2024-11-28 04:47:57.519 | INFO     | solver:test:310 - carrier SnR: 19.650684356689453
+2024-11-28 04:47:57.519 | INFO     | solver:test:311 - message loss: 0.1683522287815336
+2024-11-28 04:47:57.519 | INFO     | solver:test:312 - message SnR: 8.410616874694824
+2024-11-28 04:47:57.521 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:52:01.540 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:52:01.540 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 127_epoch
+2024-11-28 04:52:01.547 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:52:01.547 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:52:01.547 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:52:15.286 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:52:15.286 | INFO     | solver:test:309 - carrier loss: 0.010719746262544677
+2024-11-28 04:52:15.286 | INFO     | solver:test:310 - carrier SnR: 20.312639236450195
+2024-11-28 04:52:15.286 | INFO     | solver:test:311 - message loss: 0.16713107743906597
+2024-11-28 04:52:15.287 | INFO     | solver:test:312 - message SnR: 8.445272445678711
+2024-11-28 04:52:15.289 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 04:56:19.343 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:56:19.343 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 128_epoch
+2024-11-28 04:56:19.349 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 04:56:19.349 | INFO     | solver:test:287 - phase: validation
+2024-11-28 04:56:19.349 | INFO     | solver:test:290 - start testing...
+2024-11-28 04:56:33.098 | INFO     | solver:test:308 - finished testing!
+2024-11-28 04:56:33.098 | INFO     | solver:test:309 - carrier loss: 0.020343431567270604
+2024-11-28 04:56:33.099 | INFO     | solver:test:310 - carrier SnR: 17.538169860839844
+2024-11-28 04:56:33.099 | INFO     | solver:test:311 - message loss: 0.18162676810272158
+2024-11-28 04:56:33.099 | INFO     | solver:test:312 - message SnR: 8.067700386047363
+2024-11-28 04:56:33.101 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:00:37.026 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:00:37.027 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 129_epoch
+2024-11-28 05:00:37.032 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:00:37.033 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:00:37.033 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:00:50.831 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:00:50.832 | INFO     | solver:test:309 - carrier loss: 0.011215343051368282
+2024-11-28 05:00:50.833 | INFO     | solver:test:310 - carrier SnR: 20.116464614868164
+2024-11-28 05:00:50.833 | INFO     | solver:test:311 - message loss: 0.16566406013000579
+2024-11-28 05:00:50.834 | INFO     | solver:test:312 - message SnR: 8.482318878173828
+2024-11-28 05:00:50.836 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:04:54.809 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:04:54.810 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 130_epoch
+2024-11-28 05:04:54.817 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:04:54.818 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:04:54.818 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:05:08.509 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:05:08.510 | INFO     | solver:test:309 - carrier loss: 0.010744252951727026
+2024-11-28 05:05:08.510 | INFO     | solver:test:310 - carrier SnR: 20.302858352661133
+2024-11-28 05:05:08.510 | INFO     | solver:test:311 - message loss: 0.16643448718010434
+2024-11-28 05:05:08.511 | INFO     | solver:test:312 - message SnR: 8.461734771728516
+2024-11-28 05:05:08.513 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:09:12.501 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:09:12.502 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 131_epoch
+2024-11-28 05:09:12.508 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:09:12.509 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:09:12.509 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:09:26.182 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:09:26.182 | INFO     | solver:test:309 - carrier loss: 0.010681842867698934
+2024-11-28 05:09:26.183 | INFO     | solver:test:310 - carrier SnR: 20.32779884338379
+2024-11-28 05:09:26.183 | INFO     | solver:test:311 - message loss: 0.1664862105297664
+2024-11-28 05:09:26.183 | INFO     | solver:test:312 - message SnR: 8.460188865661621
+2024-11-28 05:09:26.185 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:13:30.225 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:13:30.226 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 132_epoch
+2024-11-28 05:13:30.231 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:13:30.232 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:13:30.232 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:13:43.999 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:13:43.999 | INFO     | solver:test:309 - carrier loss: 0.014014024790080766
+2024-11-28 05:13:44.000 | INFO     | solver:test:310 - carrier SnR: 19.152355194091797
+2024-11-28 05:13:44.000 | INFO     | solver:test:311 - message loss: 0.17408953157682266
+2024-11-28 05:13:44.000 | INFO     | solver:test:312 - message SnR: 8.259886741638184
+2024-11-28 05:13:44.002 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:17:47.998 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:17:47.999 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 133_epoch
+2024-11-28 05:17:48.005 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:17:48.005 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:17:48.005 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:18:01.770 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:18:01.771 | INFO     | solver:test:309 - carrier loss: 0.00995568959190259
+2024-11-28 05:18:01.772 | INFO     | solver:test:310 - carrier SnR: 20.633678436279297
+2024-11-28 05:18:01.772 | INFO     | solver:test:311 - message loss: 0.16925551742315292
+2024-11-28 05:18:01.772 | INFO     | solver:test:312 - message SnR: 8.388343811035156
+2024-11-28 05:18:01.776 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:22:05.801 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:22:05.801 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 134_epoch
+2024-11-28 05:22:05.807 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:22:05.807 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:22:05.807 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:22:19.567 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:22:19.568 | INFO     | solver:test:309 - carrier loss: 0.009750152435449381
+2024-11-28 05:22:19.568 | INFO     | solver:test:310 - carrier SnR: 20.723590850830078
+2024-11-28 05:22:19.568 | INFO     | solver:test:311 - message loss: 0.16533934845337792
+2024-11-28 05:22:19.568 | INFO     | solver:test:312 - message SnR: 8.493101119995117
+2024-11-28 05:22:19.571 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:26:23.607 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:26:23.608 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 135_epoch
+2024-11-28 05:26:23.615 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:26:23.616 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:26:23.616 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:26:37.370 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:26:37.370 | INFO     | solver:test:309 - carrier loss: 0.010901425477294694
+2024-11-28 05:26:37.371 | INFO     | solver:test:310 - carrier SnR: 20.24005889892578
+2024-11-28 05:26:37.371 | INFO     | solver:test:311 - message loss: 0.1679387673262566
+2024-11-28 05:26:37.371 | INFO     | solver:test:312 - message SnR: 8.424825668334961
+2024-11-28 05:26:37.373 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:30:41.384 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:30:41.385 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 136_epoch
+2024-11-28 05:30:41.391 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:30:41.392 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:30:41.392 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:30:55.144 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:30:55.144 | INFO     | solver:test:309 - carrier loss: 0.011795155497060882
+2024-11-28 05:30:55.144 | INFO     | solver:test:310 - carrier SnR: 19.898183822631836
+2024-11-28 05:30:55.145 | INFO     | solver:test:311 - message loss: 0.1694501494131391
+2024-11-28 05:30:55.145 | INFO     | solver:test:312 - message SnR: 8.383859634399414
+2024-11-28 05:30:55.146 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:34:59.206 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:34:59.207 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 137_epoch
+2024-11-28 05:34:59.213 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:34:59.214 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:34:59.214 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:35:12.998 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:35:12.998 | INFO     | solver:test:309 - carrier loss: 0.014920168925845434
+2024-11-28 05:35:12.999 | INFO     | solver:test:310 - carrier SnR: 18.881473541259766
+2024-11-28 05:35:12.999 | INFO     | solver:test:311 - message loss: 0.1740400954371407
+2024-11-28 05:35:12.999 | INFO     | solver:test:312 - message SnR: 8.257674217224121
+2024-11-28 05:35:13.001 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:39:16.965 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:39:16.966 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 138_epoch
+2024-11-28 05:39:16.973 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:39:16.974 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:39:16.974 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:39:30.731 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:39:30.732 | INFO     | solver:test:309 - carrier loss: 0.009888024793730842
+2024-11-28 05:39:30.732 | INFO     | solver:test:310 - carrier SnR: 20.663354873657227
+2024-11-28 05:39:30.733 | INFO     | solver:test:311 - message loss: 0.16722563535921156
+2024-11-28 05:39:30.733 | INFO     | solver:test:312 - message SnR: 8.443254470825195
+2024-11-28 05:39:30.737 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:43:34.681 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:43:34.682 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 139_epoch
+2024-11-28 05:43:34.687 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:43:34.688 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:43:34.688 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:43:48.445 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:43:48.446 | INFO     | solver:test:309 - carrier loss: 0.011516616679728031
+2024-11-28 05:43:48.446 | INFO     | solver:test:310 - carrier SnR: 20.00188636779785
+2024-11-28 05:43:48.446 | INFO     | solver:test:311 - message loss: 0.16846853873086354
+2024-11-28 05:43:48.447 | INFO     | solver:test:312 - message SnR: 8.408197402954102
+2024-11-28 05:43:48.449 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:47:52.434 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:47:52.435 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 140_epoch
+2024-11-28 05:47:52.442 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:47:52.442 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:47:52.443 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:48:06.193 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:48:06.193 | INFO     | solver:test:309 - carrier loss: 0.009104277044239025
+2024-11-28 05:48:06.194 | INFO     | solver:test:310 - carrier SnR: 21.02127456665039
+2024-11-28 05:48:06.194 | INFO     | solver:test:311 - message loss: 0.16690939889540748
+2024-11-28 05:48:06.194 | INFO     | solver:test:312 - message SnR: 8.450778007507324
+2024-11-28 05:48:06.196 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:52:10.216 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:52:10.217 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 141_epoch
+2024-11-28 05:52:10.227 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:52:10.228 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:52:10.228 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:52:23.910 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:52:23.910 | INFO     | solver:test:309 - carrier loss: 0.009848074011859439
+2024-11-28 05:52:23.911 | INFO     | solver:test:310 - carrier SnR: 20.68028450012207
+2024-11-28 05:52:23.911 | INFO     | solver:test:311 - message loss: 0.16562704659170574
+2024-11-28 05:52:23.912 | INFO     | solver:test:312 - message SnR: 8.485845565795898
+2024-11-28 05:52:23.914 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 05:56:27.914 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:56:27.915 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 142_epoch
+2024-11-28 05:56:27.921 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 05:56:27.922 | INFO     | solver:test:287 - phase: validation
+2024-11-28 05:56:27.922 | INFO     | solver:test:290 - start testing...
+2024-11-28 05:56:41.703 | INFO     | solver:test:308 - finished testing!
+2024-11-28 05:56:41.704 | INFO     | solver:test:309 - carrier loss: 0.009939878632033628
+2024-11-28 05:56:41.704 | INFO     | solver:test:310 - carrier SnR: 20.640583038330078
+2024-11-28 05:56:41.704 | INFO     | solver:test:311 - message loss: 0.16688496039973366
+2024-11-28 05:56:41.704 | INFO     | solver:test:312 - message SnR: 8.451363563537598
+2024-11-28 05:56:41.706 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:00:45.689 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:00:45.689 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 143_epoch
+2024-11-28 06:00:45.697 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:00:45.697 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:00:45.697 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:00:59.452 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:00:59.452 | INFO     | solver:test:309 - carrier loss: 0.009782115396644388
+2024-11-28 06:00:59.453 | INFO     | solver:test:310 - carrier SnR: 20.709863662719727
+2024-11-28 06:00:59.453 | INFO     | solver:test:311 - message loss: 0.16677879636722898
+2024-11-28 06:00:59.453 | INFO     | solver:test:312 - message SnR: 8.452007293701172
+2024-11-28 06:00:59.455 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:05:03.382 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:05:03.383 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 144_epoch
+2024-11-28 06:05:03.389 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:05:03.390 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:05:03.390 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:05:17.064 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:05:17.064 | INFO     | solver:test:309 - carrier loss: 0.01069343617806832
+2024-11-28 06:05:17.065 | INFO     | solver:test:310 - carrier SnR: 20.323558807373047
+2024-11-28 06:05:17.065 | INFO     | solver:test:311 - message loss: 0.16664709671149178
+2024-11-28 06:05:17.066 | INFO     | solver:test:312 - message SnR: 8.456894874572754
+2024-11-28 06:05:17.068 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:09:21.100 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:09:21.101 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 145_epoch
+2024-11-28 06:09:21.106 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:09:21.107 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:09:21.107 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:09:34.865 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:09:34.865 | INFO     | solver:test:309 - carrier loss: 0.016701590550679064
+2024-11-28 06:09:34.866 | INFO     | solver:test:310 - carrier SnR: 18.39228630065918
+2024-11-28 06:09:34.866 | INFO     | solver:test:311 - message loss: 0.17435958378371738
+2024-11-28 06:09:34.866 | INFO     | solver:test:312 - message SnR: 8.252786636352539
+2024-11-28 06:09:34.868 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:13:38.960 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:13:38.961 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 146_epoch
+2024-11-28 06:13:38.967 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:13:38.968 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:13:38.968 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:13:52.741 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:13:52.741 | INFO     | solver:test:309 - carrier loss: 0.009634112540100302
+2024-11-28 06:13:52.742 | INFO     | solver:test:310 - carrier SnR: 20.775741577148438
+2024-11-28 06:13:52.742 | INFO     | solver:test:311 - message loss: 0.166698656976223
+2024-11-28 06:13:52.742 | INFO     | solver:test:312 - message SnR: 8.454293251037598
+2024-11-28 06:13:52.745 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:17:56.730 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:17:56.730 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 147_epoch
+2024-11-28 06:17:56.737 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:17:56.737 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:17:56.738 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:18:10.481 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:18:10.481 | INFO     | solver:test:309 - carrier loss: 0.01086663193113747
+2024-11-28 06:18:10.482 | INFO     | solver:test:310 - carrier SnR: 20.253368377685547
+2024-11-28 06:18:10.482 | INFO     | solver:test:311 - message loss: 0.16634055096951741
+2024-11-28 06:18:10.482 | INFO     | solver:test:312 - message SnR: 8.464505195617676
+2024-11-28 06:18:10.484 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:22:14.415 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:22:14.416 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 148_epoch
+2024-11-28 06:22:14.425 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:22:14.425 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:22:14.425 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:22:28.157 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:22:28.157 | INFO     | solver:test:309 - carrier loss: 0.012357425535955126
+2024-11-28 06:22:28.158 | INFO     | solver:test:310 - carrier SnR: 19.696197509765625
+2024-11-28 06:22:28.158 | INFO     | solver:test:311 - message loss: 0.16647334314054912
+2024-11-28 06:22:28.158 | INFO     | solver:test:312 - message SnR: 8.459802627563477
+2024-11-28 06:22:28.160 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:26:32.083 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:26:32.084 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 149_epoch
+2024-11-28 06:26:32.090 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:26:32.090 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:26:32.090 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:26:45.880 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:26:45.881 | INFO     | solver:test:309 - carrier loss: 0.011343510392757635
+2024-11-28 06:26:45.882 | INFO     | solver:test:310 - carrier SnR: 20.068178176879883
+2024-11-28 06:26:45.882 | INFO     | solver:test:311 - message loss: 0.1680139624883258
+2024-11-28 06:26:45.883 | INFO     | solver:test:312 - message SnR: 8.420097351074219
+2024-11-28 06:26:45.884 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:30:49.818 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:30:49.819 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 150_epoch
+2024-11-28 06:30:49.826 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:30:49.826 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:30:49.826 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:31:03.483 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:31:03.483 | INFO     | solver:test:309 - carrier loss: 0.011079557284358003
+2024-11-28 06:31:03.483 | INFO     | solver:test:310 - carrier SnR: 20.17011260986328
+2024-11-28 06:31:03.483 | INFO     | solver:test:311 - message loss: 0.16858231690194872
+2024-11-28 06:31:03.483 | INFO     | solver:test:312 - message SnR: 8.405621528625488
+2024-11-28 06:31:03.486 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:35:07.461 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:35:07.463 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 151_epoch
+2024-11-28 06:35:07.470 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:35:07.470 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:35:07.470 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:35:21.201 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:35:21.201 | INFO     | solver:test:309 - carrier loss: 0.011134130584578666
+2024-11-28 06:35:21.202 | INFO     | solver:test:310 - carrier SnR: 20.14832878112793
+2024-11-28 06:35:21.202 | INFO     | solver:test:311 - message loss: 0.16750358636417087
+2024-11-28 06:35:21.203 | INFO     | solver:test:312 - message SnR: 8.43232536315918
+2024-11-28 06:35:21.206 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:39:25.153 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:39:25.153 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 152_epoch
+2024-11-28 06:39:25.159 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:39:25.160 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:39:25.160 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:39:38.872 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:39:38.872 | INFO     | solver:test:309 - carrier loss: 0.011014566239383485
+2024-11-28 06:39:38.872 | INFO     | solver:test:310 - carrier SnR: 20.19483184814453
+2024-11-28 06:39:38.872 | INFO     | solver:test:311 - message loss: 0.16705537256267336
+2024-11-28 06:39:38.873 | INFO     | solver:test:312 - message SnR: 8.446446418762207
+2024-11-28 06:39:38.874 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:43:42.830 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:43:42.831 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 153_epoch
+2024-11-28 06:43:42.837 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:43:42.838 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:43:42.838 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:43:56.628 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:43:56.628 | INFO     | solver:test:309 - carrier loss: 0.009476429664544643
+2024-11-28 06:43:56.629 | INFO     | solver:test:310 - carrier SnR: 20.847017288208008
+2024-11-28 06:43:56.629 | INFO     | solver:test:311 - message loss: 0.16670380177951993
+2024-11-28 06:43:56.629 | INFO     | solver:test:312 - message SnR: 8.456256866455078
+2024-11-28 06:43:56.631 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:48:00.556 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:48:00.557 | INFO     | solver_n_msg_deepsteg:save_models:65 - saving model to: /home/aavash/Documents/experiment_output-3/ckpt
+==> suffix: 154_epoch
+2024-11-28 06:48:00.562 | DEBUG    | solver:eval_mode:173 - eval mode
+2024-11-28 06:48:00.563 | INFO     | solver:test:287 - phase: validation
+2024-11-28 06:48:00.563 | INFO     | solver:test:290 - start testing...
+2024-11-28 06:48:14.235 | INFO     | solver:test:308 - finished testing!
+2024-11-28 06:48:14.235 | INFO     | solver:test:309 - carrier loss: 0.009556908396974442
+2024-11-28 06:48:14.236 | INFO     | solver:test:310 - carrier SnR: 20.810462951660156
+2024-11-28 06:48:14.236 | INFO     | solver:test:311 - message loss: 0.16648731002258876
+2024-11-28 06:48:14.236 | INFO     | solver:test:312 - message SnR: 8.460827827453613
+2024-11-28 06:48:14.237 | DEBUG    | solver:train_mode:169 - train mode
+2024-11-28 06:50:19.424 | INFO     | experiment:save:163 - saving experiment
